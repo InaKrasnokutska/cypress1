@@ -9,8 +9,6 @@ pipeline {
     stage('install') {
       steps {
         sh 'ls'
-        sh 'npm cache clean --force'
-        sh 'npm ci'
       }
     }
     stage('run') {
