@@ -8,12 +8,12 @@ pipeline {
   stages {
     stage('install') {
       steps {
-        sh 'ls'
+        sh 'npm ci'
       }
     }
     stage('run') {
       steps {
-        sh 'docker build -t cypress .'
+        sh 'echo run'
       }
     }
   }
