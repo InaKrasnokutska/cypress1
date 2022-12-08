@@ -9,7 +9,7 @@ pipeline {
     stage('install') {
       steps {
         sh 'rm -rf package-lock.json'
-        sh 'npm ci'
+        sh 'npm i'
       }
     }
     stage('run') {
