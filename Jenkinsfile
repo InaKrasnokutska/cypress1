@@ -13,7 +13,7 @@ pipeline {
     }
     stage('run') {
       steps {
-        sh 'echo "run"'
+        sh 'docker build -t cypress .'
       }
     }
   }
