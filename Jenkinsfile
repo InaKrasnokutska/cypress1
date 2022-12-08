@@ -8,6 +8,7 @@ pipeline {
   stages {
     stage('install') {
       steps {
+        sh 'rm -rf package-lock.json'
         sh 'npm ci'
       }
     }
