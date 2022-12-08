@@ -9,7 +9,7 @@ pipeline {
     stage('install') {
       steps {
         sh 'ls'
-        sh 'sudo npm cache clean --force'
+        sh 'npm cache clean --force'
         sh 'npm ci'
       }
     }
